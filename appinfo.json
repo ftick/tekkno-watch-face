@@ -1,0 +1,56 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        "configurable"
+    ],
+    "companyName": "2B Games",
+    "longName": "Tekkno",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/blink_off.png",
+                "menuIcon": true,
+                "name": "IMAGE_BLINK_OFF",
+                "type": "png"
+            },
+            {
+                "file": "images/cutout.png",
+                "name": "IMAGE_CUTOUT",
+                "type": "png"
+            },
+            {
+                "file": "fonts/conradi_square.ttf",
+                "name": "FONT_CON_32",
+                "type": "font"
+            },
+            {
+                "file": "fonts/conradi_square.ttf",
+                "name": "FONT_CON_24",
+                "type": "font"
+            },
+            {
+                "file": "fonts/conradi_square.ttf",
+                "name": "FONT_CON_14",
+                "type": "font"
+            },
+            {
+                "file": "images/background.png",
+                "name": "IMAGE_BACKGROUND",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "Tek",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
+    "uuid": "37b65929-f1c1-4177-b67b-31741dfb2d53",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
