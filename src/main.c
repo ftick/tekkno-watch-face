@@ -46,7 +46,7 @@ static void update_time()
     // Write the current hours and minutes into the buffer
     if(clock_is_24h_style() == true)
 	{
-      	//Use 2h hour format
+      	// Use 2h hour format
 		if(count == 0 || flash != 1)
       		strftime(buffer, sizeof("00:00"), "%H:%M", tick_time);
 		else
@@ -54,7 +54,7 @@ static void update_time()
 	}
     else
 	{
-     	 //Use 12 hour format
+     	 // Use 12 hour format
 		if(count == 0 || flash != 1)
       		strftime(buffer, sizeof("00:00"), "%I:%M", tick_time);
 		else
@@ -74,12 +74,13 @@ static void update_time()
 
 char* concat(char *s1, char *s2)
 {
+	// Simple concatenation function
     size_t len1 = strlen(s1);
     size_t len2 = strlen(s2);
-    char *result = malloc(len1+len2+1);//+1 for the zero-terminator
-    //in real code you would check for errors in malloc here
+    char *result = malloc(len1+len2+1);
+	
     memcpy(result, s1, len1);
-    memcpy(result+len1, s2, len2+1);//+1 to copy the null-terminator
+    memcpy(result+len1, s2, len2+1);
     return result;
 }
 
@@ -98,7 +99,9 @@ static void tap_handler(AccelAxisType axis, int32_t direction) {
 			APP_LOG(APP_LOG_LEVEL_INFO, "X axis negative.");
 			flash = (flash + 1) % 2;
 		}
+		
 		break;
+		
 		case ACCEL_AXIS_Y:
 		if (direction > 0)
 		{
@@ -110,7 +113,9 @@ static void tap_handler(AccelAxisType axis, int32_t direction) {
 			APP_LOG(APP_LOG_LEVEL_INFO, "Y axis negative.");
 			flash = (flash + 1) % 2;
 		}
+		
 		break;
+		
 		case ACCEL_AXIS_Z:
 		if (direction > 0)
 		{
@@ -122,6 +127,7 @@ static void tap_handler(AccelAxisType axis, int32_t direction) {
 			APP_LOG(APP_LOG_LEVEL_INFO, "Z axis negative.");
 			flash = (flash + 1) % 2;
 		}
+		
 		break;
 	}
 }
