@@ -175,7 +175,7 @@ static void main_window_load(Window *window)
   
   	// Create GFonts
   	s_time_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_CON_32));
-  	s_date_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_CON_24));
+  	s_date_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_CON_22));
   	s_batt_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_CON_14));
   
   	// Apply to Layer

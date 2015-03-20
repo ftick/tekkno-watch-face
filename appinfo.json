@@ -21,17 +21,17 @@
             },
             {
                 "file": "fonts/conradi_square.ttf",
-                "name": "FONT_CON_32",
-                "type": "font"
-            },
-            {
-                "file": "fonts/conradi_square.ttf",
-                "name": "FONT_CON_24",
-                "type": "font"
-            },
-            {
-                "file": "fonts/conradi_square.ttf",
                 "name": "FONT_CON_14",
+                "type": "font"
+            },
+            {
+                "file": "fonts/conradi_square.ttf",
+                "name": "FONT_CON_22",
+                "type": "font"
+            },
+            {
+                "file": "fonts/conradi_square.ttf",
+                "name": "FONT_CON_32",
                 "type": "font"
             },
             {
